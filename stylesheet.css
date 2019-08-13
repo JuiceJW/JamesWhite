@@ -114,13 +114,14 @@ body{
 }
 
 
-/* ------------------ IMAGE SLIDER -------------------*/
+/* ------------------ Container -------------------*/
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 25px;
 }
 
 @media (min-width: 576px) {
@@ -147,13 +148,37 @@ body{
   }
 }
 
+.header-1{
+  text-align: center;
+  font-size: 24px;
+  color: rgb(75, 75, 75);
+}
+
+.welcome-para{
+  color: rgb(90, 90, 90);
+  text-align: center;
+  font-size: 16px;
+}
+
 
 
 /* ------------------ Partner Container -------------------*/
+.partner-container{
+  margin-top: 100px;
+  width: 100%;
+
+}
+
+.partner-container h1{
+  color: rgb(75, 75, 75);
+  font-size: 24px;
+}
+
 .col-2{
   float: left;
   width: 25%;
   object-fit: cover;
+  position: relative;
 }
 
 .col-2 img{
@@ -168,6 +193,10 @@ body{
   transition: 0.3s linear;
   opacity: 1;
   filter: alpha(opacity=100); /* msie */
+}
+
+.hide{
+  visibility: hidden;
 }
 
 @media (max-width: 1200px){
@@ -213,3 +242,7 @@ body{
 
 
 /* ------------------ Partner Container -------------------*/
+
+.footer{
+  background: rgb(26, 26, 26);
+}
