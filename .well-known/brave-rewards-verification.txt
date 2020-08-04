@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jameswhite.nz
+Token: 60ddf5116b0cd3f591e5917b019b13aae95641157b126e4de4896903cb1279ac

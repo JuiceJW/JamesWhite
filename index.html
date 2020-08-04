@@ -3,92 +3,163 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  -->
   <link rel="stylesheet" href="stylesheet.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Awesome Font CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- JQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="navbarScript.js"></script>
+
 </head>
 
 <body>
-  <nav class="nav-bar">
-    <a href="index.html" class="nav-logo"><img class="img-logo" src="#" alt="Logo"></a>
-    <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="ourteam.html">Our Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+  <nav class="navbar" id="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#intro" onclick="closeNav()">Introduction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills" onclick="closeNav()">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#background" onclick="closeNav()">Background</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cv" onclick="closeNav()">CV</a>
+      </li>
     </ul>
+    <div class="close-btn">
+      <a href="JavaScript:void(0)" class="close-nav-btn" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
   </nav>
-  <div class="image-slider">
+  <span onclick="openNav()" class="open-nav-btn"><i class="fas fa-bars"></i></span>
+
+  <div class="home" id="intro">
+
+    <div class="container top-margin">
+
+      <!--<div class="column">
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Designer, Front-end Developer &amp; Mentor</h1>
+              <h2 class="subtitle is-size-4-desktop">I design and code beautifully simple things, and I love what I do.</h2><img class="avatar" src="img/mf-avatar.svg">
+            </div>-->
+      <h1 class="title">James White</h1>
+      <h2 class="subtitle">Student Fullstack Developer</h2>
+
+    </div>
+
   </div>
-
-  <!-- Text Container -->
-  <div class="container">
-    <h1 class="header-1">
-      Welcome to Te Aroha Tractors and Garden Machinery
-    </h1>
-    <p class="welcome-para">
-      Te Aroha Tractors and Garden Machinery will look after your service and repair requirements. We work on your tractors, cars, ride-on lawnmowers, chainsaws, weed eaters, hydraulics and other equipment.
-      <br><br>
-      We are the local agents for AA, State Insurance and NZI emergency car assist services. If you use those services you may well see us respond to your call to get you going again.
-      <br><br>
-      Visit Te Aroha Tractors and our friendly and qualified staff will look after you to ensure everything is fixed and ready to go.
-
-    </p>
-  </div>
-
-  <!-- Partner Container -->
-  <div class="partner-container">
-    <center>
-      <div class="container">
-        <h1>
-          We are the local agent for
-        </h1>
+  <div class="bg-primary" id="skills">
+    <div class="container">
+      <div class="contact-content">
+        <h1>Hi, I'm James.</h1>
+        <p>
+          I am a third year student at Manukau Institude of Technology, Studying my
+          Bachelors of Digital Technology with a Major in Software and Web Development.
+          My passion is front-end web-development, but I also favour the entire aspect
+          of Fullstack Web Develoment.
+         </p>
       </div>
-        <div class="col-2">
-          <img src="/images/husqvarna-logo.png" alt="">
-        </div>
-        <div class="col-2">
-          <img src="images/Landini_Tractors_Logo.jpg" alt="">
-        </div>
-        <div class="col-2">
-          <img src="/images/mccormick.jpg" alt="">
-        </div>
-        <div class="col-2">
-          <img src="/images/husqvarna-logo.png" alt="">
-        </div>
-        <p class="hide">g<p>
-    </center>
-  </div>
-  <!-- Footer Container -->
-  <div class="footer">
-    <div><!--Left-->
 
-    </div>
-    <div><!--Middle-->
-
-    </div>
-    <div><!--Right-->
-
-    </div>
-    <div><!--bottom-->
-      <ul>
-        <li>
-          Copy Right 2019
-        </li>
-        <li>
-          Website by <a target="_blank" href="www.jameswhite.nz">James White</a>
-        </li>
-      </ul>
     </div>
   </div>
+  <div class="boxes">
+    <div class="container is-overlap">
+      <div class="box box-left">
+        <i class="fas fa-laptop-code icon-primary"></i>
+        <h3 class="box-header">Web Development</h3>
+        <p>
+          I am capable of turning concept designs into fully resposive
+          front-end websites. As well as C# .NET Core 3.0 backend.
+        </p>
 
+        <h4 class="primary-color">Example 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corporis enim dolor sint ratione error aliquam, possimus qui.</p>
 
+        <h4 class="primary-color">Languages and Tools:</h4>
+        <ul class="box-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Bootstrap</li>
+          <li>C# .NET Core 3.0</li>
+          <li>Atom</li>
+          <li>Visual Studios</li>
+          <li>MS SQL Database</li>
+        </ul>
+      </div>
+      <div class="box box-middle">
+        <i class="fas fa-laptop-code icon-primary"></i>
+        <h3 class="box-header">Back-end Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corporis enim dolor sint ratione error aliquam, possimus qui.</p>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <h4 class="primary-color">Example 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corporis enim dolor sint ratione error aliquam, possimus qui.</p>
+
+        <h4 class="primary-color">Back-end Languages:</h4>
+        <ul class="box-list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+      <div class="box box-right">
+        <i class="fas fa-laptop-code icon-primary"></i>
+        <h3 class="box-header">Other Skills</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corporis enim dolor sint ratione error aliquam, possimus qui.
+        </p>
+
+        <h4 class="primary-color">Example 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, corporis enim dolor sint ratione error aliquam, possimus qui.
+        </p>
+
+        <h4 class="primary-color">List Title</h4>
+        <ul class="box-list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary background" id="background">
+    <div class="container ">
+
+    </div>
+  </div>
+
+  <div style="height: 100vh;" class="cv" id="cv">
+    <div class="container">
+      <div>
+        <h1 class="title">CV</h1>
+      </div>
+      COMING SOON!
+      <!--<iframe src="https://drive.google.com/file/d/10zCWL2qTnHp3eP3B17porniaI5xrZuTS/preview" class="cv"></iframe>-->
+    </div>
+  </div>
+
+  <div class="bg-dark footer">
+    <div class="container footer-content">
+      3NyCVRjyrP9MEkJk35i6tNwghGiACBCBxr
+      <p class="footer-text">Developed by James White
+        <span class="social-span"><a class="social-media-link" href="https://www.linkedin.com/in/james-white-b70ab415b/"><i class="fab fa-linkedin"></i> LinkedIn</a></span>
+      </p>
+
+    </div>
+  </div>
+
 </body>
 
 </html>
