@@ -194,21 +194,30 @@ body {
   padding: 0;
   border-radius: 15px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  display: flex;
+  flex-grow: 1;
 }
 
 .box{
   text-align: center;
   background: white;
-  width:33.33%;
+  width: 33.33%;
   padding: 25px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   float: left;
-  height: 670px;
+
+
 }
 
 .box-list{
   margin: 0;
   padding: 0;
+}
+
+.box-desc{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
 }
 
 .box-list, ul{
@@ -226,6 +235,10 @@ body {
 /* ################### Background Container ################### */
 .background{
   height: 100vh;
+}
+
+.white-text{
+  color: white;
 }
 
 /* ################### Footer Container ################### */
