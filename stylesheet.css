@@ -205,8 +205,6 @@ body {
   padding: 25px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
   float: left;
-
-
 }
 
 .box-list{
@@ -233,7 +231,7 @@ body {
 }
 
 /* ################### Background Container ################### */
-.background{
+.portfolio{
   height: 100vh;
 }
 
@@ -241,11 +239,24 @@ body {
   color: white;
 }
 
-/* ################### Footer Container ################### */
-
-.footer{
-
+.portfolio-display{
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
 }
+
+.portfolio-display .text{
+  position: absolute;
+  width: 240px;
+  top: 50%;
+  left: calc(50% - 120px);
+  text-align: center;
+}
+
+
+
+/* ################### Footer Container ################### */
 
 .footer-content{
   padding: 10px 0px;
@@ -279,7 +290,7 @@ body {
 
 /* ################### Universal ################### */
 .bg-primary{
-    background-color: rgb(78, 43, 135);
+  background-color: rgb(78, 43, 135);
 }
 
 .bg-dark{
@@ -300,39 +311,43 @@ body {
 
 @media (min-width: 250px){
   .container{
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 
 @media (min-width: 375px){
   .container{
-    max-width: 320px;
+    max-width: 350px;
   }
 }
 
 @media (min-width: 576px) {
   .container{
-    max-width: 500px;
+    max-width: 561px;
   }
 }
 
 
 @media (min-width: 768px) {
   .container {
-    max-width: 680px;
+    max-width: 720px;
   }
 
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 920px;
+    max-width: 970px;
   }
 }
 
 @media (max-width: 992px){
   .box{
     width:100%;
+
+  }
+  .is-overlap{
+    flex-direction: column;
   }
 }
 
