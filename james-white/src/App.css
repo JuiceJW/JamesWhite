@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root{
+  font-size: 16px;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* ------## Navigation Starts ##------*/
+
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.nav-bar-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-bar-personal-name{
+
+}
+
+.nav-bar-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-list-item{
+  position: relative;
+}
+
+.nav-bar-link{
+  padding: 10px 5px;
+  text-decoration: none;
+}
+
+.nav-bar-link::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 0%;
+  height: 3px;
+  background: rgb(209, 77, 255);
+  transition: width 0.15s ease-in-out;
+}
+
+.nav-bar-link:hover::after{
+  width: 100%;
+}
+
+/* ------## Navigation End ##------*/
+
+/* ------## Global Starts ##------*/
+
+.container-middle-content{
+  width: 1250px;
+  margin: auto;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+/* ------## Global End ##------*/
+
+
+/*
+@media screen and (min-width: 1980px) {
+  :root{
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  :root{
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 7680px) {
+  :root{
+    font-size: 48px;
+  }
+}*/
