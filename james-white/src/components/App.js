@@ -1,13 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom"
 
 import Navigation from '../components/navigation/Navigation.js'
+import HeadImage from '../components/mainComponents/HeadImage.js'
+import AboutMe from '../components/mainComponents/AboutMe.js';
+import Technologies from '../components/mainComponents/Technologies.js';
+import Footer from '../components/mainComponents/Footer.js';
 
 // NOTE: IMPORTANCE ----- Responsive! Regardless of screen size, 4k 8k, Nokia 3310 ( MAKE IT WORK )
 
@@ -17,15 +16,16 @@ import Navigation from '../components/navigation/Navigation.js'
 
 export default function App() {
   return (
-    <Router>
+    <div>
       <Helmet>
         <title>James Dylan White</title>
         <meta name="description" content="James Dylan White" />
       </Helmet>
       <Navigation />
-      <Switch>
-        <Route exact path="/" component={ null }/>
-      </Switch>
-    </Router>
+      <HeadImage/>
+      <AboutMe/>
+      <Technologies/>
+      <Footer />
+    </div>
   );
 }

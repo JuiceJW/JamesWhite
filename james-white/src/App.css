@@ -2,10 +2,16 @@
 
 :root{
   font-size: 16px;
+  --primary-purple: #ff4286;
+  --secondary-purple: #f4456a;
+  --primary-green: #005d57;
+  --secondary-green: #007d51;
+  --text-grey: rgb(85, 85, 85);
 }
 
 *{
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 body{
@@ -17,8 +23,11 @@ body{
 
 .nav-bar{
   position: fixed;
+  background: white;
   width: 100%;
   height: 80px;
+  z-index: 99;
+
 }
 
 .nav-bar-container{
@@ -30,7 +39,10 @@ body{
 }
 
 .nav-bar-personal-name{
-
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .nav-bar-list{
@@ -48,6 +60,8 @@ body{
 .nav-bar-link{
   padding: 10px 5px;
   text-decoration: none;
+  color: var(--text-grey);
+  cursor: pointer;
 }
 
 .nav-bar-link::after{
@@ -57,7 +71,7 @@ body{
   top: 24px;
   width: 0%;
   height: 3px;
-  background: rgb(209, 77, 255);
+  background: var(--primary-purple);
   transition: width 0.15s ease-in-out;
 }
 
@@ -65,13 +79,131 @@ body{
   width: 100%;
 }
 
-/* ------## Navigation End ##------*/
+.nav-bar-link.active::after{
+  width: 100%;
+}
 
+.responsive-nav-bar{
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.responsive-nav-bar.open{
+  left: 0%;
+}
+
+/* Menu Burger */
+  .menu-btn-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    z-index: 999;
+    margin-right: 13px;
+  }
+
+  .menu-btn-burger{
+    width: 20px;
+    height: 3px;
+    background: var(--text-grey);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+
+  .menu-btn-burger::before,
+  .menu-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: var(--text-grey);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+
+  .menu-btn-burger::before{
+    transform: translateY(-6px);
+  }
+
+  .menu-btn-burger::after{
+    transform: translateY(6px);
+  }
+
+      /* Animation for Burger*/
+
+  .menu-btn.open .menu-btn-burger{
+    transform: translateX(-20px);
+    background: transparent;
+  }
+
+  .menu-btn.open .menu-btn-burger::before{
+    transform: rotate(45deg) translate(12.50px, -12.50px);
+    background: white;
+  }
+
+  .menu-btn.open .menu-btn-burger::after{
+    transform: rotate(-45deg) translate(12.50px, 12.50px);
+    background: white;
+  }
+
+/* ------## Navigation End ##------*/
+/* ------## Head Image Container Starts ##------*/
+
+.head-description{
+  height: 100vh;
+  background: black;
+  background-image: url('./img/auckland-skyline-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.centered-name-desc{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  top: calc(50% - 90px);
+  left: calc(50% - 175px);
+  width: 350px;
+  height: 180px;
+}
+
+.my-name{
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+
+.my-desc{
+  border: 2px solid white;
+  padding: 15px 40px;
+  font-size: 32px;
+}
+
+/* ------## Head Image Container End ##------*/
 /* ------## Global Starts ##------*/
 
 .container-middle-content{
   width: 1250px;
   margin: auto;
+}
+
+.fw-600{
+  font-weight: 600;
 }
 
 .fw-700{
@@ -84,6 +216,70 @@ body{
 
 /* ------## Global End ##------*/
 
+@media screen and (min-width: 350px){
+  .container-middle-content{
+    width: 325px;
+  }
+
+}
+
+@media screen and (min-width: 600px){
+  .container-middle-content{
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 850px){
+  .container-middle-content{
+    width: 800px;
+  }
+
+  .menu-btn-container{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .responsive-nav-bar{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-bar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 100vh;
+  }
+
+  .nav-bar-list-item{
+    width: 80%;
+    text-align: center;
+    padding: 0px 0 35px 0;
+  }
+
+  .nav-bar-link{
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .container-middle-content{
+    width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .container-middle-content{
+    width: 1250px;
+  }
+}
 
 /*
 @media screen and (min-width: 1980px) {
