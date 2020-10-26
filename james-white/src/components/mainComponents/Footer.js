@@ -4,7 +4,11 @@ export default class Footer extends Component {
 
   render() {
     return (
-      <div style={{height: "100vh"}}>3</div>
+      <div id="footer"" className="footer">
+        <div className="container-middle-content">
+          Footer
+        </div>
+      </div>
     );
   }
 

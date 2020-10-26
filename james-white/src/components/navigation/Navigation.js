@@ -34,6 +34,7 @@ export default class Navigation extends Component {
             <ul className="nav-bar-list">
               <li className="nav-bar-list-item">
                 <Link
+                  onClick={this.handleNavigation}
                   to="aboutMe"
                   spy={true}
                   smooth={true}
@@ -46,6 +47,7 @@ export default class Navigation extends Component {
               </li>
               <li className="nav-bar-list-item">
                 <Link
+                  onClick={this.handleNavigation}
                   to="technologies"
                   spy={true}
                   smooth={true}
