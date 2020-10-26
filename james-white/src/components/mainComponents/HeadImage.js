@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
 
 import BackgroundImage from '../../img/auckland-skyline-4.jpg';
 

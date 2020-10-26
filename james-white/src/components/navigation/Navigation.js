@@ -42,7 +42,20 @@ export default class Navigation extends Component {
                   offset={-80}
                   className="nav-bar-link"
                   activeClass="active">
-                  About me
+                  About
+                </Link>
+              </li>
+              <li className="nav-bar-list-item">
+                <Link
+                  onClick={this.handleNavigation}
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  duration={400}
+                  offset={-80}
+                  className="nav-bar-link"
+                  activeClass="active">
+                  Portfolio
                 </Link>
               </li>
               <li className="nav-bar-list-item">
