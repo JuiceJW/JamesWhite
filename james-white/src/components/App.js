@@ -5,6 +5,7 @@ import '../App.css';
 import Navigation from '../components/navigation/Navigation.js'
 import HeadImage from '../components/mainComponents/HeadImage.js'
 import AboutMe from '../components/mainComponents/AboutMe.js';
+import Portfolio from '../components/mainComponents/Portfolio.js';
 import Technologies from '../components/mainComponents/Technologies.js';
 import Footer from '../components/mainComponents/Footer.js';
 
@@ -24,6 +25,7 @@ export default function App() {
       <Navigation />
       <HeadImage/>
       <AboutMe/>
+      <Portfolio/>
       <Technologies/>
       <Footer />
     </div>

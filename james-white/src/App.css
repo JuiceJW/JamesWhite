@@ -199,10 +199,32 @@ body{
 }
 
 /* ------## Head Image Container End ##------*/
-
+/* ------## About Container ##------*/
 .about-container{
+  padding: 130px 0 100px 0;
+}
+
+/* ------## About Container Ends ##------*/
+/* ------## Portfolio Container ##------*/
+
+.portfolio{
 
 }
+
+.portfolio-content-container{
+  background: var(--secondary-purple);
+}
+
+.portfolio-waves{
+  background: white;
+  margin-bottom: -5px;
+}
+.portfolio-waves-out{
+  background: var(--secondary-purple);
+  padding-bottom: -3px;
+}
+
+/* ------## Portfolio Container Ends ##------*/
 /* ------## Footer Container ##------*/
 
 .footer{
@@ -276,6 +298,10 @@ body{
   margin: auto;
 }
 
+.fw-normal{
+  font-weight: normal;
+}
+
 .fw-500{
   font-weight: 500;
 }
@@ -299,6 +325,9 @@ body{
     width: 325px;
   }
 
+  .about-container{
+    padding: 80px 0 100px 0;
+  }
 }
 
 @media screen and (min-width: 600px){
@@ -314,6 +343,10 @@ body{
 
   .menu-btn-container{
     display: none;
+  }
+
+  .about-container{
+    padding: 130px 0 100px 0;
   }
 }
 
@@ -351,11 +384,19 @@ body{
   .container-middle-content{
     width: 1050px;
   }
+
+  .about-container{
+    padding: 150px 0 100px 0;
+  }
 }
 
 @media screen and (min-width: 1300px){
   .container-middle-content{
     width: 1250px;
+  }
+
+  .about-container{
+    padding: 200px 0 100px 0;
   }
 }
 
