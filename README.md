@@ -1,6 +1,6 @@
 ## Personal Website
 
-Remake my previous application to reflect my current learning of react.
+Remake of my previous website in React.js
 
 ## Technology
 
