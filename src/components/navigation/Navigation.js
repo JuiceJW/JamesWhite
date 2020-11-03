@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 export default class Navigation extends Component {
 

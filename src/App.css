@@ -207,12 +207,9 @@ body{
 /* ------## About Container Ends ##------*/
 /* ------## Portfolio Container ##------*/
 
-.portfolio{
-
-}
-
 .portfolio-content-container{
   background: var(--secondary-purple);
+  color: white;
 }
 
 .portfolio-waves{
@@ -222,6 +219,92 @@ body{
 .portfolio-waves-out{
   background: var(--secondary-purple);
 }
+
+/* Portfolio Item */
+.portfolio-item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+}
+
+.portfolio-item-information{
+  padding: 0 20px;
+}
+
+.portfolio-item-image{
+  height: 350px;
+}
+
+.product-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item-information{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-title-title{
+  margin: 0;
+}
+
+.product-contribution-title{
+  text-decoration: underline;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.product-tech{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-tech-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-tech-item .fab, .product-link .fab{
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.product-tech, .product-link-list{
+  margin-top: 10px;
+}
+
+.product-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  transition: all 0.1s ease-in-out;
+}
+
+.product-link:hover{
+  border-color: rgb(201, 208, 213);
+  color: rgb(201, 208, 213);
+}
+
+.product-link.link-unavailable{
+  pointer-events: none;
+
+  background: rgb(201, 208, 213);
+  opacity: 0.5;
+}
+/* Portfolio Item Ends */
 
 /* ------## Portfolio Container Ends ##------*/
 /* ------## Footer Container ##------*/
@@ -292,6 +375,7 @@ body{
 /* ------## Footer Container Ends ##------*/
 /* ------## Global Starts ##------*/
 
+
 .container-middle-content{
   width: 1250px;
   margin: auto;
@@ -317,6 +401,26 @@ body{
   font-size: 20px;
 }
 
+.w50{
+  width: 50%;
+}
+
+/* No Select class created by User Blowsie https://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+/* No Select Ends */
+
+.cursor-not-allowed{
+  cursor: not-allowed;
+}
+
 /* ------## Global End ##------*/
 
 @media screen and (min-width: 350px){
@@ -327,6 +431,24 @@ body{
   .about-container{
     padding: 80px 0 100px 0;
   }
+
+  .portfolio-item{
+    flex-direction: column;
+  }
+
+  .w50{
+    width:100%
+  }
+
+  .portfolio-item-information{
+    padding: 20px 0px;
+    height: 400px;
+  }
+
+  .portfolio-item-image{
+    height: 250px;
+  }
+
 }
 
 @media screen and (min-width: 600px){
@@ -346,6 +468,10 @@ body{
 
   .about-container{
     padding: 130px 0 100px 0;
+  }
+
+  .portfolio-item-image{
+    height: 350px;
   }
 }
 
@@ -377,6 +503,7 @@ body{
   .nav-bar-link{
     color: white;
   }
+
 }
 
 @media screen and (min-width: 1100px){
@@ -386,6 +513,23 @@ body{
 
   .about-container{
     padding: 150px 0 100px 0;
+  }
+
+  .portfolio-item{
+    flex-direction: row;
+  }
+
+  .w50{
+    width:50%
+  }
+
+  .portfolio-item-information{
+    padding: 0 20px;
+    height: 350px;
+  }
+
+  .portfolio-item-image{
+    height: 350px;
   }
 }
 
