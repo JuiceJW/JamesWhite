@@ -1,27 +1,7 @@
 import React, {Component} from 'react';
 
-import TrippieAirImage from '../../img/trippir-air-display-image.jpg'
-
 import PortfolioItem from '../reusableComponents/PortfolioItem'
-
-const trippieAirData = {
-  image: TrippieAirImage,
-  title: 'Trippie Air Administration Portal',
-  desc: 'Information on product withheld under an NDA.',
-  role: 'Designed and Implementated the admin portal for Trippie Air.',
-  tech: [{
-    name: 'React',
-    icon: 'fab fa-react'
-  }, {
-    name: 'Firebase',
-    icon: 'fab fa-google'
-  }, {
-    name: 'NPM',
-    icon: 'fab fa-npm'
-  }],
-  github: 'Come for a look? Nothing to be found here',
-  githubDisable: true
-}
+import {trippieAirData, firstNationalData} from '../../portfolioData/data.js'
 
 export default class Portfolio extends Component {
   render(){
@@ -33,6 +13,7 @@ export default class Portfolio extends Component {
         <div className="portfolio-content-container">
           <div className="container-middle-content">
             <PortfolioItem data={trippieAirData}/>
+            <PortfolioItem data={firstNationalData}/>
           </div>
         </div>
         <svg className="portfolio-waves-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
