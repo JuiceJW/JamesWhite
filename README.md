@@ -16,5 +16,5 @@ React.js
 Please follow these instructions to view the remake.
 
 1. Clone or download the 'react-remake' branch.
-2. Open the file cd in your command line and run `npm i` to instal dependencies.
+2. Open the file cd in your command line and run `npm i` to install dependencies.
 3. Run the command `npm start` to start a local host.
