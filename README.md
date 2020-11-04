@@ -1,11 +1,11 @@
 ## Personal Website
 
-Remake of my previous website in React.js
+Remake of my previous website in React.js, using a modern UI/UX design.
 
 ## Technology
 
 // Font
-Googles Montserrat
+Google's Montserrat
 
-// JS Framework
-ReactJS
+// JavaScript Framework
+React.js
