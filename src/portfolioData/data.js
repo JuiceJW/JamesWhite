@@ -1,4 +1,5 @@
 import TrippieAirImage from '../img/trippir-air-display-image.jpg'
+import FirstNationalGif from '../img/FirstNationalGif.gif'
 
 export const trippieAirData = {
   image: TrippieAirImage,
@@ -20,7 +21,7 @@ export const trippieAirData = {
 }
 
 export const firstNationalData = {
-  image: TrippieAirImage,
+  image: FirstNationalGif,
   title: 'First National Roper and Jones',
   desc: 'Reusable brochure layout with minimal user input.',
   role: 'Worked along side the Director to design and implement a reusable brochure layout for all listed properties.',
