@@ -1,5 +1,6 @@
 import TrippieAirImage from '../img/trippir-air-display-image.jpg'
 import FirstNationalGif from '../img/FirstNationalGif.gif'
+import PersonalImage from '../img/personalWebsite.png'
 
 export const trippieAirData = {
   image: TrippieAirImage,
@@ -9,6 +10,9 @@ export const trippieAirData = {
   tech: [{
     name: 'React',
     icon: 'fab fa-react'
+  }, {
+    name: 'CSS',
+    icon: 'fab fa-css3-alt'
   }, {
     name: 'Firebase',
     icon: 'fab fa-google'
@@ -34,4 +38,23 @@ export const firstNationalData = {
   }],
   github: 'No GitHub Repository',
   githubDisable: true
+}
+
+export const personalWebsite = {
+  image: PersonalImage,
+  title: 'www.jamesdwhite.me',
+  desc: 'An update to my personal portfolio website.',
+  role: 'Designed and Developed a personal portfolio website for myself, that include passed work and everything you may want to know about me.',
+  tech:  [{
+    name: 'React',
+    icon: 'fab fa-react'
+  }, {
+    name: 'CSS',
+    icon: 'fab fa-css3-alt'
+  }, {
+    name: 'NPM',
+    icon: 'fab fa-npm'
+  }],
+  github: 'https://github.com/JuiceJW/JamesWhite/tree/react-remake',
+  githubDisable: false
 }

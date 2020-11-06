@@ -4,7 +4,9 @@ export default class Technologies extends Component {
 
   render() {
     return (
-      <div id="technologies" style={{height: "100vh"}}>2</div>
+      <div id="technologies" className="">
+        2
+      </div>
     );
   }
 }
