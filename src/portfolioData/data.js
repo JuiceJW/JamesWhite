@@ -14,9 +14,6 @@ export const trippieAirData = {
     name: 'React',
     icon: 'fab fa-react'
   }, {
-    name: 'CSS',
-    icon: 'fab fa-css3-alt'
-  }, {
     name: 'Firebase',
     icon: 'fab fa-google'
   }, {
