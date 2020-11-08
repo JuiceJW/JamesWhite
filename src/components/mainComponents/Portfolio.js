@@ -12,6 +12,7 @@ export default class Portfolio extends Component {
         </svg>
         <div id="portfolio" className="portfolio-content-container">
           <div className="container-middle-content">
+            <h1 className="section-title"><span className="fw-700">Portfolio</span></h1>
             <PortfolioItem data={trippieAirData}/>
             <PortfolioItem data={personalWebsite}/>
             <PortfolioItem data={firstNationalData}/>

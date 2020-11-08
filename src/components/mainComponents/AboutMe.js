@@ -6,7 +6,7 @@ export default class AboutMe extends Component {
     return (
       <div id="aboutMe" className="about-container">
         <div className="container-middle-content">
-          <h1><span className="fw-700">About</span><span className="fw-normal">me</span></h1>
+          <h1><span className="fw-700">About</span> <span className="fw-normal">me</span></h1>
           <p>
             Self motivated, confident individual, who takes pride in his work and has the ability to adapt quickly
             to challenges. I grew up in a small rural town in the Kaipara region, and moved to Auckland city at the beginning

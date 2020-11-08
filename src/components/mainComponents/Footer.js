@@ -38,6 +38,16 @@ export default class Footer extends Component {
                 ON LINKEDIN
               </a>
             </div>
+            <div className="social-media-item fw-600">
+              <i className="social-icons fas fa-file-alt"></i>
+              <a
+                className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://drive.google.com/file/d/1cJgMmjKSw_0r5CiiBT9LWvulnh0LSk6B/view?usp=sharing">
+                RESUME
+              </a>
+            </div>
           </div>
 
         </div>

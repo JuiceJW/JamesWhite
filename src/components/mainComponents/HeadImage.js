@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import BackgroundImage from '../../img/auckland-skyline-4.jpg';
+import BackgroundImage from '../../img/auckland-skyline.webp';
 
 export default class HeadImage extends Component {
 

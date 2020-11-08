@@ -1,6 +1,9 @@
-import TrippieAirImage from '../img/trippir-air-display-image.jpg'
-import FirstNationalGif from '../img/FirstNationalGif.gif'
-import PersonalImage from '../img/personalWebsite.png'
+import TrippieAirImage from '../img/trippie-air.webp';
+import FirstNationalGif from '../img/FirstNationalGif.gif';
+import PersonalImage from '../img/personal-website.webp';
+
+//import FirstNationalWebM from '../img/FirstNationalWebM.webm';
+//import FirstNationalMPEG from '../img/FirstNationalMPEG.mp4';
 
 export const trippieAirData = {
   image: TrippieAirImage,
@@ -42,7 +45,7 @@ export const firstNationalData = {
 
 export const personalWebsite = {
   image: PersonalImage,
-  title: 'www.jamesdwhite.me',
+  title: 'Personal Portfolio',
   desc: 'An update to my personal portfolio website.',
   role: 'Designed and Developed a personal portfolio website for myself, that includes past work and everything you may want to know about me.',
   tech:  [{

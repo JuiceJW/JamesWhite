@@ -312,6 +312,39 @@ body{
 /* Portfolio Item Ends */
 
 /* ------## Portfolio Container Ends ##------*/
+/* ------## Technologies Container ##------*/
+.technologies-content{
+  display: flex;
+  justify-content: center;
+}
+
+.technologies-cell{
+  margin: 10px;
+  flex: 1 1 auto;
+  border-right: 1px solid var(--text-grey);
+  color: var(--text-grey);
+}
+
+.technologies-cell:last-of-type{
+  border: 0;
+}
+
+.tech-cell-title{
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tech-title-icon{
+  color: var(--primary-purple);
+  margin: 15px;
+  font-size: 34px;
+}
+
+.tech-item{
+  padding: 3px 0;
+}
+/* ------## Technologies Container Ends ##------*/
 /* ------## Footer Container ##------*/
 
 .footer{
@@ -406,8 +439,16 @@ body{
   font-size: 20px;
 }
 
+.fs-22{
+  font-size: 22px;
+}
+
 .w50{
   width: 50%;
+}
+
+.w33{
+  width: 33%;
 }
 
 /* No Select class created by User Blowsie https://stackoverflow.com/questions/3779534/how-do-i-disable-text-selection-with-css-or-javascript */
@@ -426,6 +467,11 @@ body{
   cursor: not-allowed;
 }
 
+.section-title{
+  padding: 20px 0;
+  margin: 0;
+}
+
 /* ------## Global End ##------*/
 
 @media screen and (min-width: 350px){
@@ -442,7 +488,11 @@ body{
   }
 
   .w50{
-    width:100%
+    width:100%;
+  }
+
+  .w33{
+    width:100%;
   }
 
   .portfolio-item-information{
@@ -454,11 +504,31 @@ body{
     height: 250px;
   }
 
+  .technologies-content{
+    flex-direction: column;
+  }
+
+  .technologies-cell{
+    border-right: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--text-grey);
+  }
+
+  .technologies-cell:last-of-type{
+    border: 0;
+  }
+
+  .footer-box{
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 600px){
   .container-middle-content{
     width: 550px;
+  }
+  .footer-box{
+    font-size: 22px;
   }
 }
 
@@ -477,6 +547,24 @@ body{
 
   .portfolio-item-image{
     height: 350px;
+  }
+
+  .w33{
+    width:33%
+  }
+
+  .technologies-content{
+    flex-direction: row;
+  }
+
+  .technologies-cell{
+    border-bottom: 0;
+    padding-bottom: 15px;
+    border-right: 1px solid var(--text-grey);
+  }
+
+  .technologies-cell:last-of-type{
+    border: 0;
   }
 }
 
@@ -525,7 +613,11 @@ body{
   }
 
   .w50{
-    width:50%
+    width:50%;
+  }
+
+  .w33{
+    width:33%
   }
 
   .portfolio-item-information{
