@@ -1,21 +1,40 @@
-## https://www.jamesdwhite.me
-## Personal Website
+# Welcome to Remix!
 
-Remake of my previous website in React.js, using a modern UI/UX design.
+- 📖 [Remix docs](https://remix.run/docs)
 
-## Technology
+## Development
 
-// Font
-Google's Montserrat
+Run the dev server:
 
-// JavaScript Framework
-React.js
+```shellscript
+npm run dev
+```
 
-### Run this website.
-#### As this remake is incomplete, I do not have a live version as of yet.
+## Deployment
 
-Please follow these instructions to view the remake.
+First, build your app for production:
 
-1. Clone or download the 'react-remake' branch.
-2. Open the file cd in your command line and run `npm i` to install dependencies.
-3. Run the command `npm start` to start a local host.
+```sh
+npm run build
+```
+
+Then run the app in production mode:
+
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
+
+## Styling
+
+This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
