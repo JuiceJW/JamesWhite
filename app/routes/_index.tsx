@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import Navigation from "~/components/navigation";
+import AucklandSkyline from "../../public/images/auckland-skyline.webp";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,40 +11,24 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="font-sans m-0 p-0">
+      {/* <Navigation /> */}
+      <section className="h-[100vh]">
+        <img
+          className="h-[100vh] w-full object-cover grayscale brightness-50"
+          src={AucklandSkyline}
+          alt=""
+        />
+        <div className="absolute text-white left-0 top-0 h-[100vh] gap-4 w-full flex flex-col justify-center items-center">
+          <h3 className="text-3xl font-semibold">James Dylan White</h3>
+          <h4 className="text-2xl">Full Stack Software Engineer</h4>
+        </div>
+      </section>
+      {/*
+      <AboutMe/>
+      <Portfolio/>
+      <Technologies/>
+      <Footer /> */}
     </div>
   );
 }
