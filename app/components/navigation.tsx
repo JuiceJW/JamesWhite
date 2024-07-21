@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 
 const HamburgerButton = ({
   isOpen,
@@ -41,6 +41,22 @@ export default function Navigation() {
     setIsOpen(!isOpen);
   };
 
+  const handleNavigationClick = (
+    event: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>,
+    target: string
+  ) => {
+    event.preventDefault(); // Prevent default anchor link behavior
+    const targetSection = document.getElementById(target);
+    if (targetSection) {
+      const topPosition = targetSection.offsetTop - 80; // Assuming 16px is your desired scroll margin
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth", // Smooth scroll
+      });
+      setIsOpen(false); // Close the navigation menu
+    }
+  };
+
   return (
     <nav className="fixed bg-white w-full h-20 z-50 px-16">
       <div className="flex justify-between items-center h-20 container m-auto">
@@ -53,7 +69,20 @@ export default function Navigation() {
         <div className="hidden lg:block relative">
           <ul className="flex gap-6 list-none p-0">
             <li>
-              <a href="#about-me">About</a>
+              <a
+                href="#about-me"
+                onClick={(event) => handleNavigationClick(event, "about-me")}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#experience"
+                onClick={(event) => handleNavigationClick(event, "experience")}
+              >
+                Experience
+              </a>
             </li>
             {/* <li>Portfolio</li>
             <li>Development Technologies</li> */}
@@ -65,10 +94,21 @@ export default function Navigation() {
             isOpen ? "flex" : "hidden"
           }`}
         >
-          <ul className="flex flex-col list-none p-4">
-            <li>
-              <a href="#about-me" onClick={() => setIsOpen(false)}>
+          <ul className="flex flex-col list-none w-full">
+            <li className="w-full">
+              <a
+                className="block p-4 w-full"
+                href="#about-me"
+                onClick={(event) => handleNavigationClick(event, "about-me")}
+              >
                 About
+              </a>
+              <a
+                className="block p-4 w-full"
+                href="#experience"
+                onClick={(event) => handleNavigationClick(event, "experience")}
+              >
+                Experience
               </a>
             </li>
             {/* Additional menu items here */}
