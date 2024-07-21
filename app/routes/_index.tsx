@@ -157,6 +157,7 @@ export default function Index() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/jamesdylanwhite/"
+                className="hover:text-[#0a66c2] transition-colors duration-300"
               >
                 <FaLinkedin size={48} />
               </a>
@@ -164,6 +165,7 @@ export default function Index() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/JuiceJW"
+                className="hover:text-[#4078c0] transition-colors duration-300"
               >
                 <FaGithub size={48} />
               </a>
