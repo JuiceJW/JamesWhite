@@ -87,7 +87,12 @@ export default function Index() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-3xl">Trail Limited</h2>
+              <h2 className="text-3xl">
+                Trail Limited{" "}
+                <span className="text-2xl text-gray-700">
+                  January 2021 - December 2021
+                </span>
+              </h2>
               <p className="text-xl">
                 I worked closely with the Product Manager to implement software
                 improvements that empowered over 400 Financial Advisers to
