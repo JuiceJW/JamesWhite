@@ -63,29 +63,32 @@ export default function Index() {
           <div className="flex flex-col gap-16">
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl">
-                Inugo Systems Limited{" "}
+                Youdooh Limited{" "}
                 <span className="text-2xl text-gray-700">
-                  January 2022 - Present
+                  October 2024 - Present
                 </span>
               </h2>
               <p className="text-xl">
-                I optimized database queries, speeding them up and cutting load
-                times by a whopping 90%. Fast and furious, just the way we like
-                it! Teamed up with a crew of five full-stack wizards to create
-                next-gen software, revolutionizing the old-school parking
-                permitting system. We aimed to save trees by ditching thousands
-                of paper permits each year. This wasn&apos;t just a local gig -
-                we collaborated with awesome partners from the UK, Australia,
-                the US, and New Zealand. I love helping others level up! I
-                supported our new and junior devs, guiding them through the
-                ropes of cool tech like caching, GraphQL, Next.js, and Node.js.
-                Smooth onboarding and solid training are my specialties. I also
-                stepped up as an interim team leader, holding regular reviews
-                with a small team. This role helped me improve and develop my
-                leadership skills, getting ready for that next big step up to a
-                senior role.
+                I work with a team of three developers to enhance and refine an industry-leading software platform that connects over 3,000 digital advertising screens in New Zealand and 4,000 in Australia, making Digital Out-of-Home (DOOH) advertising more accessible for small and medium-sized businesses.
+                <br />
+                One of my key contributions has been designing, building, and implementing a preview system that allows users to see how their ad will appear on a billboard before purchasing the space. This feature improves user confidence and streamlines the ad booking process. In addition to adding new features, I also focus on refactoring existing systems to improve performance, maintainability, and scalability.
               </p>
             </div>
+            
+            <div className="flex flex-col gap-4">
+              <h2 className="text-3xl">
+                Inugo Systems Limited{" "}
+                <span className="text-2xl text-gray-700">
+                  January 2022 - October 2024
+                </span>
+              </h2>
+              <p className="text-xl">
+                I optimized database queries, reducing load times by 90%, making the system significantly faster and more efficient. I worked as part of a team of five full-stack developers to modernize a legacy parking permit system, replacing thousands of paper permits with a digital solution.
+                <br />
+                This role involved working with international teams across the UK, Australia, the US, and New Zealand. I also mentored junior developers, guiding them through caching strategies, GraphQL, Next.js, and Node.js to help them get up to speed. Additionally, I stepped into an interim team lead position, conducting regular reviews and mentoring a small team. This experience helped me develop my leadership skills as I prepare for a senior role.
+              </p>
+            </div>
+            
             <div className="flex flex-col gap-4">
               <h2 className="text-3xl">
                 Trail Limited{" "}
@@ -94,22 +97,9 @@ export default function Index() {
                 </span>
               </h2>
               <p className="text-xl">
-                I worked closely with the Product Manager to implement software
-                improvements that empowered over 400 Financial Advisers to
-                enhance their capabilities. This collaboration ensured that our
-                product was not only user-friendly but also effective in meeting
-                the diverse needs of financial professionals. I took the lead in
-                developing software sections to ensure our product complied with
-                the latest 2021 government regulations, making it robust and
-                reliable in a constantly evolving regulatory landscape.
+                I worked closely with the Product Manager to implement software improvements that supported over 400 financial advisers, ensuring the platform was both user-friendly and effective.
                 <br />
-                Additionally, I was responsible for the build and deployment of
-                software on a weekly basis, utilizing C#, SQL Migrations, and
-                Azure app services. This role required a deep understanding of
-                our tech stack to ensure seamless updates and continuous
-                integration. By consistently delivering high-quality builds, I
-                contributed to the overall stability and performance of our
-                software, ensuring a smooth experience for all users.
+                A key part of my role was leading the development of features to maintain compliance with new 2021 government regulations. I was also responsible for the weekly build and deployment process, working with C#, SQL Migrations, and Azure app services to ensure smooth updates and system reliability.
               </p>
             </div>
           </div>
