@@ -72,6 +72,8 @@ export default function Index() {
                 I work with a team of three developers to enhance and refine an industry-leading software platform that connects over 3,000 digital advertising screens in New Zealand and 4,000 in Australia, making Digital Out-of-Home (DOOH) advertising more accessible for small and medium-sized businesses.
                 <br />
                 One of my key contributions has been designing, building, and implementing a preview system that allows users to see how their ad will appear on a billboard before purchasing the space. This feature improves user confidence and streamlines the ad booking process. In addition to adding new features, I also focus on refactoring existing systems to improve performance, maintainability, and scalability.
+                <br />
+                Stepping up into a lead engineer role, I oversee the day-to-day development operations, coordinate sprint planning, and mentor junior developers to ensure clean, efficient, and scalable code delivery. I’m responsible for reviewing pull requests, setting coding standards, and aligning technical decisions with business objectives. My focus as a team lead is on creating a collaborative, high-performing environment where developers are encouraged to contribute ideas, take ownership of their work, and continuously improve the product.
               </p>
             </div>
             
